@@ -1,0 +1,79 @@
+body {
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+
+.detailed-car-image {
+  /* height: 200px; */
+  /* height: 100%; */
+  width: 100%;
+  /* min-height: 600px; */
+}
+
+pointer {
+  cursor: pointer
+}
+
+.phone-block {
+  /* height: 36px */
+}
+
+.modal {
+  display: block
+}
+
+.phone-enter-active, .phone-leave-active {
+  -webkit-transition: all .5s;
+  transition: all .5s
+}
+
+.phone-enter, .phone-leave-to {
+  -webkit-transform: translate(50px, -10px);
+  transform: translate(50px, -10px);
+  opacity: 0
+}
+
+.modal-enter-active, .modal-leave-active {
+  -webkit-transition: all .5s;
+  transition: all .5s
+}
+
+.modal-enter, .modal-leave-to {
+  -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);
+  opacity: 0
+}
+
+.fade-enter-active {
+  -webkit-animation: .75s fade forwards;
+  animation: .75s fade forwards
+}
+
+.fade-leave-active {
+  -webkit-animation: .75s fade reverse;
+  animation: .75s fade reverse
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: .5
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: .5
+  }
+}
